@@ -25,7 +25,7 @@ function app() {
             document.querySelector('#score').style.color = "red"
             document.querySelector('#score').innerHTML = "Anda belum menyelesaikan kuis.";
         } else {
-            
+            document.querySelector('#score').style.color = "black"
             document.querySelector('#score').innerHTML = `Skor Anda: ${score}`;
         }
     });
