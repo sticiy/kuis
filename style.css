@@ -22,7 +22,7 @@ h1 {
 }
 
 .container {
-    width: 51rem;
+    width: 50rem;
     margin: auto;
 }
 
@@ -50,7 +50,7 @@ form {
     /* padding: 15px; */
     /* margin-bottom: 20px; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 50rem;
+    width: 50rem;
     padding: 40px;
     margin: auto;
     margin-bottom: 20px;
