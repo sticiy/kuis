@@ -1,17 +1,9 @@
-html {
-    width: 100vw;
-    /* display: flex; */
-    /* align-items: center; */
-}
-
 /* Style umum untuk body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    margin: auto;
     padding: 20px;
-    /* margin: 0 10rem; */
-    /* width: 80%; */
+    margin: 0;
 }
 
 /* Header */
@@ -21,11 +13,12 @@ h1 {
     margin-bottom: 30px;
 }
 
+/* Container untuk soal */
 .container {
-    width: 50rem;
+    width: 100%; /* Atur menjadi 100% agar sesuai layar */
+    max-width: 600px; /* Batas maksimum lebar */
     margin: auto;
 }
-
 
 /* Style untuk div soal */
 .soal {
@@ -47,14 +40,10 @@ h1 {
 form {
     background-color: #fff;
     border-radius: 8px;
-    /* padding: 15px; */
-    /* margin-bottom: 20px; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 50rem;
-    padding: 40px;
-    margin: auto;
+    width: 100%;
+    padding: 20px;
     margin-bottom: 20px;
-
 }
 
 /* Style label */
@@ -68,16 +57,44 @@ input[type="radio"] {
     margin-right: 10px;
 }
 
-
+/* Style tombol kirim */
 #btn {
     border: none;
     background-color: rgb(90, 199, 250);
-    padding: 7px 20px;
+    padding: 10px 20px;
     font-size: 18px;
     border-radius: 7px;
-    /* margin-left: 14rem; */
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
+    display: block;
+    width: 100%; /* Tombol menyesuaikan lebar layar */
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+/* Media query untuk layar mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .soal {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    #btn {
+        font-size: 16px;
+        padding: 10px;
+    }
 }
